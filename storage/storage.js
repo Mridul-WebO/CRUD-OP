@@ -45,10 +45,11 @@
       return { status: false, error: error };
     }
   }
-  export function deleteData(deletRowId /*userId as a string*/) {
+  export function deleteData(deleteRowId /*userId as a string*/) {
     try {
-      const { employeeData } = this.getData(); //array of objects [{},{}]
-      const updatedData = employeeData.filter((val) => val.userId !== deletRowId);
+      const { employeeData } = getData(); //array of objects [{},{}]
+
+      const updatedData = employeeData.filter((val) => val.userId !== deleteRowId);
       localStorage.setItem('employeeData', JSON.stringify(updatedData));
       return { status: true };
     } catch (error) {
