@@ -8,6 +8,12 @@
   text-align: center;
 }
 
+[id^="error"]{
+  color: red;
+  margin-top: 3px;
+  font-size: 15px;
+}
+
 #basicTable{
   /* border: 2px solid red; */
   display: flex;
