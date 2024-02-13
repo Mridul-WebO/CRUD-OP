@@ -22,7 +22,7 @@
 
   export function getSingleData(editRowId) {
     try {
-      const storedData = this.getData().employeeData; //array of objects [{},{}]
+      const storedData = getData().employeeData; //array of objects [{},{}]
 
       const rowToUpdate = storedData.filter((val) => val.userId === editRowId);
 
@@ -35,7 +35,7 @@
   export function editData(dataObj /*object {}*/) {
 
     try {
-      const storedData = this.getData().employeeData; //array of objects [{},{}]
+      const storedData = getData().employeeData; //array of objects [{},{}]
 
       const rowId = storedData.findIndex((val) => val.userId === dataObj.userId);
       storedData.splice(rowId, 1, dataObj);
