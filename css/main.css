@@ -9,12 +9,12 @@
 }
 
 #basicTable{
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   justify-content: center;
 }
 #advanceTable{
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   justify-content: center;
 }
