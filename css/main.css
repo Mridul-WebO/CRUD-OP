@@ -15,14 +15,15 @@
 }
 
 #basicTable{
-  /* border: 2px solid red; */
+
   display: flex;
   justify-content: center;
+  padding: 30px;
 }
 #advanceTable{
-  /* border: 2px solid red; */
-  display: flex;
-  justify-content: center;
+  padding: 30px;
+
+
 }
 
 #navbar-container {
@@ -96,7 +97,7 @@ td {
   border: 1px solid lightgrey;
   border-collapse: collapse;
   text-align: left;
-  padding: 15px;
+  padding: 25px;
 }
 
 .container-basic-table {
