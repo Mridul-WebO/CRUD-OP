@@ -6,8 +6,6 @@
     <title>CRUD</title>
     <link rel="stylesheet" href="../css/main.css" />
     <!-- <script src="index.js" type="module" async></script> -->
-
-
   </head>
 
   <body>
@@ -22,11 +20,11 @@
       <!-- MainContent -->
       <div class="container">
         <form onsubmit="return false;" id="crudForm">
-          <input type="hidden" id="userId" name="userId">
+          <input type="hidden" id="userId" name="userId" />
           <div class="row">
             <div class="col">Name:</div>
             <div class="col">
-              <input type="text" name="name" id="name" placeholder="Enter name"  />
+              <input type="text" name="name" id="name" placeholder="Enter name" />
               <div id="error-name"></div>
             </div>
           </div>
@@ -50,14 +48,14 @@
           <div class="row">
             <div class="col">Email:</div>
             <div class="col">
-              <input type="email" name="email" id="email" placeholder="Enter email"   />
+              <input type="email" name="email" id="email" placeholder="Enter email" />
               <div id="error-email"></div>
             </div>
           </div>
           <div class="row">
             <div class="col">Phone:</div>
             <div class="col">
-              <input type="tel" name="phone" id="phone" placeholder="Enter phone"  />
+              <input type="tel" name="phone" id="phone" placeholder="Enter phone" />
               <div id="error-phone"></div>
             </div>
           </div>
@@ -81,8 +79,8 @@
           <div class="row">
             <div class="col"></div>
             <div class="col">
-              <button id="submitBtn" type="submit"  name="submit">Submit</button>
-              <button id="resetBtn" type="reset"  name="resetBtn">Reset</button>
+              <button id="submitBtn" type="submit" name="submit">Submit</button>
+              <button id="resetBtn" type="reset" name="resetBtn">Reset</button>
             </div>
           </div>
         </form>
@@ -91,30 +89,20 @@
 
     <!-- ######################## Basic Table ############################ -->
 
-     <!-- ######################## Basic Table ############################ -->
+    <!-- ######################## Basic Table ############################ -->
 
-     <div class="main-container">
+    <div class="main-container">
       <h3>Basic</h3>
       <!-- NavBar -->
       <div id="navbar-container">
         <span> &nbsp;Display</span>
-        <!-- <div id="searchBox">
-          <input type="text" placeholder="Search entries..." onkeyup="searchEntries(this.value.toLowerCase())" />
-          <label for="sortEntries">Sort</label>
-          <input type="checkbox" name="sortEntries" id="sortEntries" onchange="sortEntriesAccToDob()" />
-          <input style="display: none" onclick="deleteAll()" type="button" value="Delete all" />
-        </div> -->
       </div>
 
       <!-- MainContent -->
       <div class="container container-basic-table">
-        <div id="basicTable">
-
-        </div>
-
+        <div id="basicTable"></div>
       </div>
     </div>
-
 
     <!-- ######################## Advance Table ############################ -->
 
@@ -127,21 +115,11 @@
 
       <!-- MainContent -->
       <div class="container advance-table container-basic-table">
-        <div id="advanceTable">
-
-
-
-        </div>
-
+        <div id="advanceTable"></div>
       </div>
     </div>
 
-
-
-    <script src="main.js" type="module" ></script>
-    <script src="validation.js" type="module"  ></script>
-
-
-
+    <script src="main.js" type="module"></script>
+    <script src="validation.js" type="module"></script>
   </body>
 </html>
